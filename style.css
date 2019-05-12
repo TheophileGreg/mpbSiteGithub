@@ -8,7 +8,8 @@ header {
   background-color: #252865;
 
 }
- 
+
+
 .bouton {
   color: black;
 }
@@ -58,6 +59,10 @@ color: #252865 !important;
   border : 0px;
 }
 
+.material-icons{
+  color: #252865!important;
+}
+
 .collection .collection-item {
 background-color: #fff;
 line-height: 1.5rem;
@@ -73,6 +78,13 @@ border-bottom: 1px solid #ffd600 ;
 }
 
 .title2 {
+  margin-bottom: 0px !important;
+  color: #ffd600 !important;
+}
+
+.title3 {
+  font-weight: bold;
+  font-size: 38px;
   margin-bottom: 0px !important;
   color: #ffd600 !important;
 }
