@@ -5,6 +5,9 @@
  *
  * Made By MaterializeCSS.com
  */
+nav {
+  z-index:25;
+}
 
 nav ul a,
 nav .brand-logo {
@@ -17,6 +20,14 @@ p {
 
 .sidenav-trigger {
   color: #26a69a;
+}
+
+#pageinfo {
+  background-color: transparent;
+  margin-top: 30px;
+  border-top: 0px!important;
+  border-bottom: 0px!important;
+  box-shadow: 0px !important;
 }
 
 .parallax-container {
@@ -54,4 +65,41 @@ p {
 
 footer.page-footer {
   margin: 0;
+}
+
+
+@import "compass/css3";
+.static-img {
+  display: block; 
+}
+
+iframe {
+   max-width: 100%; 
+}
+.map-container {
+  width: 100%;
+  margin: 2%;
+  height: 0;
+  padding-top: 1%;
+  position: relative;
+  display: none; /* Hide for small screens */
+  iframe {
+    width: 100%;
+    height: 100%; /* had to specify height/width */
+    position: absolute;
+    top: 0; 
+    right: 0;
+    left: 0; 
+    bottom: 0;   
+  }
+}
+
+/* Medium Screens */
+@media all {
+  .map-container {
+    display: block;
+  } 
+  .static-img {
+    display: none; 
+  }
 }
