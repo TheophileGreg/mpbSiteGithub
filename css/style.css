@@ -22,12 +22,28 @@ p {
   color: #26a69a;
 }
 
+#lienapp{
+  background-color: blue;
+}
+
+#rs{
+  background-color: pink;
+}
+
 #pageinfo {
   background-color: transparent;
   margin-top: 30px;
   border-top: 0px!important;
   border-bottom: 0px!important;
   box-shadow: 0px !important;
+}
+
+#pattern {
+  height: 500px;
+}
+
+.map-container{
+  height: 450px;
 }
 
 .parallax-container {
@@ -55,7 +71,9 @@ p {
     top: 0;
   }
 }
-
+#pattern{
+  justify-content: center;
+}
 .icon-block {
   padding: 0 15px;
 }
@@ -80,7 +98,7 @@ iframe {
   width: 100%;
   margin: 2%;
   height: 0;
-  padding-top: 1%;
+  padding-top: 0;
   position: relative;
   display: none; /* Hide for small screens */
   iframe {
@@ -97,7 +115,9 @@ iframe {
 /* Medium Screens */
 @media all {
   .map-container {
-    display: block;
+    display: flex;
+    justify-content: center;
+    
   } 
   .static-img {
     display: none; 
