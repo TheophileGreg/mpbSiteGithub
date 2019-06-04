@@ -7,18 +7,19 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?9ukd8d">
-
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Lato&display=swap" rel="stylesheet">
 
 </head>
 <body>
   <!--bar de navigation sur moyen et petit écran-->
  <nav class="hide-on-large-only pinned  indigo darken-4">
- <div class="nav-wrapper">
+ <div class="nav-wrapper" style="font-family: 'Fjalla One', sans-serif;">
       
-        <a href="#" class="brand-logo white-text">MyPrivateBeach</a>
+        <a href="#" class="brand-logo white-text" >MyPrivateBeach</a>
         <a href="#" class="sidenav-trigger waves-effect" data-target="nav-mobile-side">
           <i class="material-icons amber-text">menu</i>
         </a>
@@ -35,7 +36,7 @@
       
       <!--bar de navigation sur grand écran-->
 <nav class="hide-on-med-and-down indigo darken-4">
-  <div class="nav-wrapper">
+  <div class="nav-wrapper" style="font-family: 'Fjalla One', sans-serif;">
       <div class="container">
         <a href="#" class="brand-logo white-text">MyPrivateBeach</a>
         <a href="#" class="sidenav-trigger waves-effect" data-target="nav-mobile">
@@ -178,9 +179,9 @@
           
           <h4>Contact</h4>
         </div>
-        <div class="col s8" id="rs">
+        <div id="contacte" class="col s8 " id="rs">
           <div class="column center">
-            <div style="font-size:3vw;text-align:center;" >Téléphone: <a href="tel=+33659005245"><span style="font-size:2vw;text-align:center;">06 59 00 52 45</span></a></div>
+            <div style="font-size:3vw;text-align:center;" >Téléphone: <a href="tel:+33659005245"><span style="font-size:2vw;text-align:center;">06 59 00 52 45</span></a></div>
             <div style="font-size:3vw;text-align:center;">E-mail: <a href="mailto:contact@myprivatebeach.fr"><span style="font-size:2vw;text-align:center;">contact@myprivatebeach.fr</span></a></div>
             <span class="light " style="font-size:3vw;text-align:center;">Suivez nous sur les réseaux </span>
             <div id="rsicon" class="row space-between">
@@ -190,7 +191,7 @@
                   <a href="#" class="pure-button button-socicon button-socicon btn-floating pulse amber"><span class="socicon-instagram indigo-text text-darken-4 "></span></a>
                   
             </div>
-              <span id="mention">Copyright MyPrivateBeach tous droits réservés 2019 - <a href="./politiques.html">Mentions légales</a> </span> 
+              <p id="mention">Copyright MyPrivateBeach tous droits réservés 2019 - <a href="./politiques.html">Mentions légales</a> </p> 
           </div> 
         </div>
         <div class="col s4 column" id="lienapp">
@@ -244,7 +245,7 @@ function buildMap() {
   //If Large Screen
       if($('.map-container').length < 1) { //If map doesn't already exist
         buildEmbed();
-      }
+      } 
 };
 
 function buildEmbed() { //Build iframe view

@@ -5,11 +5,27 @@
  *
  * Made By MaterializeCSS.com
  */
+
 nav {
   z-index:25;
 }
+
 #download-ios{
   justify-content: center;
+}
+
+
+
+h1, h4{
+  font-family: 'Fjalla One', sans-serif !important;
+}
+
+p, h5, th, td {
+  font-family: 'Lato', sans-serif !important;
+}
+
+h5, thead {
+  font-weight: bold !important;
 }
 
 #rsicon {
