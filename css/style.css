@@ -16,7 +16,10 @@ nav {
   font-size: 40px;
 }
 
-
+#mention{
+  justify-content: center;
+  align-content: center;
+}
 nav ul a,
 nav .brand-logo {
   color: #444;

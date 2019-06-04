@@ -11,6 +11,7 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?9ukd8d">
 
+
 </head>
 <body>
   <!--bar de navigation sur moyen et petit écran-->
@@ -62,7 +63,7 @@
           <p>Dites-nous où vous êtes, on s'occupe du reste !</p>
         </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-ios" ><img class="responsive-img  center" src="badge-ios.png" height="130" width="200"></a>
+          <a href="#" id="download-ios" ><img class="responsive-img  center" src="badge-ios.png" height="130" width="200"></a>
 
           <a href="https://play.google.com/store/apps/details?id=com.mpb.myprivatebeachapp" id="download-android" ><img class="responsive-img " src="badge-android.png" height="130" width="200"></a>
         </div>
@@ -187,21 +188,26 @@
                   
                   <a href="https://www.facebook.com/myprivatebeachagosta/" class="pure-button button-socicon btn-floating pulse amber btn-big"><span class="socicon-facebook indigo-text text-darken-4 "></span></a>
                   <a href="#" class="pure-button button-socicon button-socicon btn-floating pulse amber"><span class="socicon-instagram indigo-text text-darken-4 "></span></a>
-              
+                  
             </div>
+              <span id="mention">Copyright MyPrivateBeach tous droits réservés 2019 - <a href="./politiques.html">Mentions légales</a> </span> 
           </div> 
         </div>
         <div class="col s4 column" id="lienapp">
           <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-ios" ><img class="responsive-img  center" src="badge-ios.png" height="130" width="200"></a>
+          <a href="#" id="download-ios" ><img class="responsive-img  center" src="badge-ios.png" height="130" width="200"></a>
 
           <a href="https://play.google.com/store/apps/details?id=com.mpb.myprivatebeachapp" id="download-android" ><img class="responsive-img " src="badge-android.png" height="130" width="200"></a>
         </div>
+
         </div>
+        
       </div>
 
     </div>
-  </div>
+
+      </div>
+      
 
 
   
@@ -235,15 +241,10 @@ var static = "https://maps.google.com/maps/api/staticmap?center=41.854500,8.7906
 var embed = '<iframe width="950" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=agosta%20plage&key=AIzaSyBaL5HBPlAETWQKlgm8gxPhuzHXqC9F_g4" allowfullscreen></iframe>';
 
 function buildMap() {
-  if(sw>bp) { //If Large Screen
+  //If Large Screen
       if($('.map-container').length < 1) { //If map doesn't already exist
         buildEmbed();
       }
-  } else {
-      if($('.static-img').length < 1) { //If static image doesn't exist
-        buildStatic();
-      }
-  }
 };
 
 function buildEmbed() { //Build iframe view
